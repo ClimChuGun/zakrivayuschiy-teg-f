@@ -1,1 +1,0 @@
-https://github.com/ClimChuGun/zakrivayuschiy-teg-f.git
