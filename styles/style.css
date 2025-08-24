@@ -107,7 +107,7 @@
 }
 
 .van-image {
-  object-position: 90%;
+  object-position: 95%;
 }
 
 .hue-saturation {
@@ -291,7 +291,12 @@
   gap: 8px;
   padding-top: 15px;
   padding-bottom: 15px;
-  inline-size: clamp(306px, calc(306/375*100vw), 335px);
+  inline-size: clamp(310px, calc(310/375*100vw), 339px);
+}
+
+.diskette {
+  width: 21px;
+  height: 21px;
 }
 
 dialog::backdrop {
@@ -323,7 +328,6 @@ dialog::backdrop {
 
 .dialog__diskette {
   inline-size: 39px;
-  aspect-ratio: 1/1;
 }
 
 .dialog__footer {
@@ -347,9 +351,12 @@ dialog::backdrop {
 @media (width >= 1440px) {
   .memory-button {
     flex-direction: row;
+    gap: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 55px;
   }
 }
-
 
 @media (width <= 375px) {
   

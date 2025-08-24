@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/style.css" >
     <link rel="stylesheet" href="styles/animations.css" >
     <link rel="icon" href="images/favicon.png" >
+    
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -41,7 +42,7 @@
             основами и настроиться на учёбу. И, возможно, подумать, как новые
             знания могут повлиять на ваше будущее.
           </p>
-          <p>Было не очень легко втянуться, но потом было не остановиться.</p>
+          <p>Начал я давно, втянулся так сказать</p>
           <div class="card-button">
             <button type="button" class="card__icon-button">
               <svg
@@ -515,17 +516,16 @@
           class="button memory-button"
           type="button"
           onclick="window['dialog-id'].showModal()"
-          aria-controls="dialog-id"
-        >
-          <svg class="dialog__diskette">
-            <use href="svg/floppy.svg#floppy"/>
+          aria-controls="dialog-id">
+          <svg viewBox="0 0 21 21" class="diskette" xmlns="http://www.w3.org/2000/svg">
+            <use href="floppy.svg#floppy"></use>
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
         <dialog id="dialog-id" class="dialog">
           <div class="dialog__content">
             <svg viewBox="0 0 21 21" class="dialog__diskette">
-              <use href="./svg/floppy.svg#floppy"/>
+              <use href="floppy.svg#floppy"></use>
             </svg>
             <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
           </div>
@@ -533,8 +533,7 @@
             <button
               class="dialog-button button"
               type="button"
-              onclick="this.closest('dialog').close()"
-            >
+              onclick="this.closest('dialog').close()">
               <span class="dialog__button__text button__text">ok</span>
             </button>
           </div>
